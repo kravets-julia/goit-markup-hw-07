@@ -14,18 +14,6 @@ ol {
   padding-left: 0;
 }
 
-button {
-  cursor: pointer;
-}
-
-address {
-  font-style: normal;
-}
-
-img {
-  display: block;
-}
-
 :root {
   --main-color: #757575;
   --title-color: #212121;
@@ -49,6 +37,18 @@ body {
 
 .list {
   list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
 }
 
 .visually-hidden {
@@ -100,10 +100,6 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.7);
-}
-
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -123,6 +119,9 @@ body {
   border-radius: 4px;
   padding: 40px;
 }
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+}
 
 .modal-button {
   display: flex;
@@ -136,12 +135,10 @@ body {
   position: absolute;
   right: 8px;
   top: 8px;
-}
-
-.modal-button:hover,
-.modal-button:focus {
-  fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:hover, .modal-button:focus {
+  fill: var(--accent-color);
 }
 
 .modal-title {
@@ -187,11 +184,6 @@ body {
   transform: translateY(-50%);
 }
 
-.service-input:focus {
-  border-color: var(--accent-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .service-input:focus + .input-icon {
   fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -205,6 +197,10 @@ body {
   padding: 0;
   padding-left: 42px;
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.service-input:focus {
+  border-color: var(--accent-color);
 }
 
 .form-text {
@@ -215,32 +211,28 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-text::-moz-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-text:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-text::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-text:focus {
   border-color: var(--accent-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .chekbox-text {
@@ -304,8 +296,6 @@ body {
 }
 
 .header {
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -347,9 +337,7 @@ body {
   color: var(--title-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.nav-item:hover,
-.nav-item:focus {
+.nav-item:hover, .nav-item:focus {
   color: var(--accent-color);
 }
 
@@ -369,7 +357,6 @@ body {
   color: var(--accent-color);
   position: relative;
 }
-
 .current::after {
   content: "";
   display: block;
@@ -388,6 +375,11 @@ body {
   fill: var(--main-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.nav-item:hover .svg-mail, .nav-item:focus .svg-mail,
+.nav-item:hover .svg-tel,
+.nav-item:focus .svg-tel {
+  fill: var(--accent-color);
+}
 
 .li {
   text-decoration: none;
@@ -396,16 +388,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
-
-.nav-item:hover .svg-mail,
-.nav-item:focus .svg-mail {
-  fill: var(--accent-color);
-}
-
-.nav-item:hover .svg-tel,
-.nav-item:focus .svg-tel {
-  fill: var(--accent-color);
 }
 
 .hero {
@@ -572,15 +554,13 @@ body {
   color: var(--icon-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.team-networks-link:hover, .team-networks-link:focus {
+  background-color: #2196F3;
+  color: var(--white-color);
+}
 
 .team-networks-icons {
   fill: currentColor;
-}
-
-.team-networks-link:hover,
-.team-networks-link:focus {
-  background-color: #2196F3;
-  color: var(--white-color);
 }
 
 .customers {
@@ -603,6 +583,9 @@ body {
   width: calc((100% - 150px) / 6);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.customers-button:hover, .customers-button:focus {
+  border-color: var(--accent-color);
+}
 
 .customers-link {
   display: flex;
@@ -613,19 +596,12 @@ body {
   color: var(--icon-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.customers-button:hover .customers-link, .customers-button:focus .customers-link {
+  color: var(--accent-color);
+}
 
 .customers-icon {
   fill: currentColor;
-}
-
-.customers-button:hover,
-.customers-button:focus {
-  border-color: var(--accent-color);
-}
-
-.customers-button:hover .customers-link,
-.customers-button:focus .customers-link {
-  color: var(--accent-color);
 }
 
 .footer {
@@ -661,6 +637,11 @@ body {
   color: var(--white-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.address-item:hover, .address-item:focus,
+.address-list-item:hover,
+.address-list-item:focus {
+  color: var(--accent-color);
+}
 
 .footer-address-list {
   margin-top: 9px;
@@ -668,13 +649,6 @@ body {
 
 .address-list-item {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.address-item:hover,
-.address-item:focus,
-.address-list-item:hover,
-.address-list-item:focus {
-  color: var(--accent-color);
 }
 
 .send-content {
@@ -707,44 +681,42 @@ body {
   color: var(--white-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.join-link:hover, .join-link:focus {
+  background-color: var(--accent-color);
+}
 
 .join-icon {
   fill: currentColor;
-}
-
-.join-link:hover,
-.join-link:focus {
-  background-color: var(--accent-color);
 }
 
 .sign-input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
   outline: none;
   color: var(--white-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .sign-input::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .sign-input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .sign-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+.sign-input:focus {
+  border-color: var(--accent-color);
 }
 
 .join-send-btn {
@@ -771,11 +743,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 12px;
-}
-
-.sign-input:focus {
-  border-color: var(--accent-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio {
@@ -805,9 +772,7 @@ body {
   min-width: 73px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-button:hover,
-.portfolio-button:focus {
+.portfolio-button:hover, .portfolio-button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -827,6 +792,9 @@ body {
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-card:hover, .portfolio-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-card-back {
@@ -854,9 +822,7 @@ body {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-card:hover .portfolio-back-text,
-.portfolio-card:focus .portfolio-back-text {
+.portfolio-card:hover .portfolio-back-text, .portfolio-card:focus .portfolio-back-text {
   transform: translateY(0);
 }
 
@@ -879,9 +845,4 @@ body {
   color: var(--main-color);
   font-size: 16px;
   line-height: 1.88;
-}
-
-.portfolio-card:hover,
-.portfolio-card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }/*# sourceMappingURL=main.css.map */
