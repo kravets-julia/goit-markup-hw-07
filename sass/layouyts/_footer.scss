@@ -1,0 +1,148 @@
+.footer {
+    background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-flex {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-inform {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+}
+
+.logo-footer {
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+
+.logo-white {
+    color: var(--white-color);
+}
+
+
+.address-item,
+.address-list-item {
+    text-decoration: none;
+    font-style: normal;
+
+    color: var(--white-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.footer-address-list {
+    margin-top: 9px;
+}
+
+.address-list-item {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address-item:hover,
+.address-item:focus,
+.address-list-item:hover,
+.address-list-item:focus {
+    color: var(--accent-color);
+}
+
+.send-content {
+    margin-left: auto;
+}
+
+.join-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.join {
+    color: var(--white-color);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.join-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white-color);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join-icon {
+    fill: currentColor;
+}
+
+.join-link:hover,
+.join-link:focus {
+    background-color: var(--accent-color);
+}
+
+
+.sign-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 16px;
+    outline: none;
+    color: var(--white-color);
+}
+
+.sign-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.join-send-btn {
+    width: 200px;
+    height: 50px;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    fill: var(--white-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+
+.join-send-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.sign-input:focus {
+    border-color: var(--accent-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

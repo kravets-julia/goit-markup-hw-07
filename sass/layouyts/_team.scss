@@ -1,0 +1,75 @@
+.team {
+    background: var(--secondary-babackground-color);
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+
+.team-item {
+    width: calc((100% - 90px) / 4);
+
+    background: var(--card-background);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+
+.team-inform {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    color: var(--title-color);
+    margin-bottom: 10px;
+}
+
+.team-position {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team-networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.team-networks-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-color);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-networks-icons {
+    fill: currentColor;
+}
+
+.team-networks-link:hover,
+.team-networks-link:focus {
+    background-color: #2196F3;
+    color: var(--white-color);
+}
