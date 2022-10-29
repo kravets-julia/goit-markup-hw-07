@@ -3,34 +3,36 @@
 }
 
 
-.logo-black {
+.logo--black {
     color: #000000;
 }
 
 
-.nav-list {
+.nav__list {
     display: flex;
     gap: 50px;
 }
 
-.contacs-list {
+.contacs__list {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 50px;
     margin-left: auto;
 }
 
-.nav-list-logo {
+.nav {
     display: flex;
     align-items: center;
 }
 
-.flex-header {
+.container__header {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.nav-item {
+.nav__item {
     display: block;
     font-family: inherit;
     font-weight: 500;
@@ -50,11 +52,11 @@
 }
 }
 
-.contacs {
+.nav__item--color {
     color: var(--main-color);
 }
 
-.nav-icon {
+.nav__icon {
     display: flex;
     align-content: center;
     align-items: center;
@@ -80,20 +82,20 @@
     }
 }
 
-.svg-mail,
-.svg-tel {
+.svg__mail,
+.svg__tel {
     fill: var(--main-color);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .nav-item:hover &,
-    .nav-item:focus & {
+    .nav__item:hover &,
+    .nav__item:focus & {
     fill: var(--accent-color);
 }
 }
 
 
-.li {
+.contacs__item {
     text-decoration: none;
     display: flex;
     align-content: center;

@@ -4,12 +4,16 @@
 }
 
 
-.advantages-list {
+.advantages__list {
     display: flex;
     gap: 30px;
 }
 
-.advantages-link {
+.advantages__item {
+    background-position: center;
+}
+
+.advantages__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,17 +22,11 @@
     margin-bottom: 30px;
 }
 
-.advantages-icon {
+.advantages__icon {
     fill: var(--title-color);
 }
 
-
-.advantages-item {
-    background-position: center;
-
-}
-
-.secondary-title {
+.advantages__title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
