@@ -296,62 +296,66 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-      <div class="container footer-flex">
-        <div class="footer-inform">
+      <div class="container footer__container">
+        <div class="footer__inform">
           <div>
-            <a class="logo logo-footer" href="./index.html" lang="en"
-              >Web<span class="logo-white">Studio</span></a
+            <a class="logo logo__footer" href="./index.html" lang="en"
+              >Web<span class="logo logo--white">Studio</span></a
             >
             <address class="address">
               <a
-                class="address-item"
+                class="address__link"
                 href="https://goo.gl/maps/dqY5QBXwFPovs5Bk7"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 м. Київ, пр-т Лесі Українки, 26</a
               >
-              <ul class="list">
-                <li class="footer-address-list">
-                  <a class="address-list-item" href="mailto:info@devstudio.com"
+              <ul class="list address__list">
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--data"
+                    href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="footer-address-list">
-                  <a class="address-list-item" href="tel:+380961111111"
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--data"
+                    href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
               </ul>
             </address>
           </div>
-          <div class="join-content">
-            <p class="join">приєднуйтесь</p>
-            <ul class="list join-list">
-              <li class="join-item">
-                <a class="join-link" href="">
-                  <svg class="join-icon" width="20px" height="20px">
+          <div class="join">
+            <p class="invite__text">приєднуйтесь</p>
+            <ul class="list networks">
+              <li class="networks__item">
+                <a class="networks__link networks__link--color" href="">
+                  <svg class="networks__icons" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="join-item">
-                <a class="join-link" href="">
-                  <svg class="join-icon" width="20px" height="20px">
+              <li class="networks__item">
+                <a class="networks__link networks__link--color" href="">
+                  <svg class="networks__icons" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="join-item">
-                <a class="join-link" href="">
-                  <svg class="join-icon" width="20px" height="20px">
+              <li class="networks__item">
+                <a class="networks__link networks__link--color" href="">
+                  <svg class="networks__icons" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="join-item">
-                <a class="join-link" href="">
-                  <svg class="join-icon" width="20px" height="20px">
+              <li class="networks__item">
+                <a class="networks__link networks__link--color" href="">
+                  <svg class="networks__icons" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -359,22 +363,22 @@
             </ul>
           </div>
         </div>
-        <div class="send-content">
-          <p class="join">Підпишіться на розсилку</p>
-          <div class="join-send-form">
+        <div class="subscribe">
+          <p class="invite__text">Підпишіться на розсилку</p>
+          <form class="subscribe__form">
             <input
               type="email"
               name="email"
-              class="sign-input"
+              class="subscribe__input"
               placeholder="E-mail"
             />
-            <button type="submit" class="join-send-btn">
+            <button type="submit" class="subscribe__btn">
               Підписатися
-              <svg class="icon-send" width="24" height="24">
+              <svg class="icon__send" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
