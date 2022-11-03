@@ -30,17 +30,19 @@
 }
 
 .team__title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(500, 16px, 1.19, null);
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.19;
 
     color: var(--title-color);
     margin-bottom: 10px;
 }
 
 .team__position {
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(null, 16px, 1.19, null);
+    // font-size: 16px;
+    // line-height: 1.19;
 }
 
 // .networks {

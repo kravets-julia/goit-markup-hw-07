@@ -107,7 +107,6 @@ img {
   line-height: 1.19;
   text-decoration: none;
   color: var(--accent-color);
-  margin-right: 94px;
 }
 
 .title {
@@ -123,6 +122,7 @@ img {
 
 .logo--black {
   color: #000000;
+  margin-right: 94px;
 }
 
 .nav__list {
